@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "7c908804-0b04-4a80-96ed-d9fbf9d3ef2f",
+		"name": "helloworld-swagger",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "helloWorldGet",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://192.168.40.2:18080/hello/world",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"40",
+						"2"
+					],
+					"port": "18080",
+					"path": [
+						"hello",
+						"world"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "helloWorldGetById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.40.2:18080/hello/world/2",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"40",
+						"2"
+					],
+					"port": "18080",
+					"path": [
+						"hello",
+						"world",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "createWorldPost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.40.2:18080/hello/world?worldId=1&worldName=yq",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"40",
+						"2"
+					],
+					"port": "18080",
+					"path": [
+						"hello",
+						"world"
+					],
+					"query": [
+						{
+							"key": "worldId",
+							"value": "1"
+						},
+						{
+							"key": "worldName",
+							"value": "yq"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
